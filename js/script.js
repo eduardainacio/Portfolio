@@ -27,24 +27,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função responsável por pintar a aba e a barra com a cor correta
     function ativarAbaVisual(abaAtiva) {
-        // Reseta o estilo de todas as abas para o padrão inativo por laço de repetição
+        // Reseta o estilo de todas as abas para o padrão inativo
         abas.forEach(aba => {
-            aba.classList.remove('active');
+            aba.classList.remove('active'); // Remove estilos inline
             aba.style.backgroundColor = 'transparent';
-            aba.style.color = '#444444';
+            aba.style.color = ''; 
         });
 
         // Adiciona a classe de controle CSS para a aba selecionada
         abaAtiva.classList.add('active');
         
-        // Pega os dados de cores direto no Navbar do HTML
-        const corDeFundo = abaAtiva.getAttribute('data-color');
-        const corDoTexto = abaAtiva.getAttribute('data-text');
+        // SÓ aplica as cores customizadas e a barra inferior se for tela de Computador
+        if (window.innerWidth > 768) {
+            const corDeFundo = abaAtiva.getAttribute('data-color');
+            const corDoTexto = abaAtiva.getAttribute('data-text');
 
-        // Pinta a aba e a barra inferior de forma sincronizado
-        abaAtiva.style.backgroundColor = corDeFundo;
-        abaAtiva.style.color = corDoTexto;
-        barraHorizontal.style.backgroundColor = corDeFundo;
+            abaAtiva.style.backgroundColor = corDeFundo;
+            abaAtiva.style.color = corDoTexto;
+            barraHorizontal.style.backgroundColor = corDeFundo;
+            barraHorizontal.style.display = 'block'; // Garante que a barra aparece no PC
+        } else {
+            barraHorizontal.style.display = 'none'; // No celular ele esconde a barra inferior horizontal para não quebrar o layout
+        }
     }
 
     // Configuração do "Vigiador" da rolagem por isolar uma faixa central de 20% na tela do usuário
