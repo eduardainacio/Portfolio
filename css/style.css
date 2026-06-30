@@ -571,6 +571,10 @@ h2 {
     .menu-fixo ul li a {
         font-size: 0.85rem;
     }
+    
+    .menu-toggle {
+        display: block; 
+    }
 
     /* Alinha o Logo e o Botão nas extremidades da tela */
     .nav-topo {
