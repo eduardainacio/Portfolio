@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="icon" href="img/logo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css"> <!-- importação do código em CSS -->
+</head>
+<body>
+
+    <nav class="navbar"> <!-- Navegador para acessar as seções -->
+        <div class="nav-topo">
+            <div class="nav-logo"> <img src="img/logo_icon.png" alt="flor rosa" class="nav-icon"> Portfólio</div>
+
+            <button class="menu-toggle" id="menu-toggle"> 
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
+            </button>
+            
+            <ul class="nav-abas" id="nav-abas"> <!-- Link para as seções do portfolio -->
+                <li><a href="#inicio" class="tab-link active" data-color="#f4f4f4" data-text="#545454">Início</a></li>
+                <li><a href="#sobre" class="tab-link" data-color="#e1aebc" data-text="#2b2b2b">Sobre Mim</a></li>
+                <li><a href="#formacao" class="tab-link" data-color="#852936" data-text="#f4f4f4">Formação</a></li>
+                <li><a href="#portfolio" class="tab-link" data-color="#f4f4f4" data-text="#545454">Portfólio</a></li>
+                <li><a href="#contato" class="tab-link" data-color="#c5e9e3" data-text="#545454">Contato</a></li>
+            </ul>
+        </div>
+        <div id="barra-inferior" class="barra-inferior"></div>
+    </nav>
+
+    <section id="inicio" class="secao-topo"> <!-- Seção de inicio -->
+        <div class="container flex-inicio">
+            <div class="foto">
+                <img src="img/foto-principal.jpg" alt="Foto de Perfil" class="foto-perfil">
+            </div>
+            <div class="texto-titulo">
+                <h1>EDUARDA INÁCIO</h1>
+                <p>Estudante de Engenharia de Software | Full Stack</p>
+                <a href="#sobre" class="botao-link">Conheça Mais Sobre Mim!</a> <!-- Botão que leva para a seção sobre mim -->
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="secao-sobre"> <!-- Seção sobre mim -->
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="colunas-texto">
+                <div class="coluna-paragrafo">
+                    <p> Me chamo Eduarda, curso Engenharia de Software e estou construindo minha trajetória como desenvolvedora. Enxergo cada 
+                        projeto como uma nova oportunidade para explorar as tecnologias, refinar meu código e criar uma base técnica consistente. 
+                        Meu objetivo é desenvolver aplicações bem estruturadas, funcionais e acessíveis, sempre buscando facilitar o dia a dia das 
+                        pessoas por meio da tecnologia.</p><br>
+                    <p> Para mim, a engenharia vai além do código, ela é sobre encarar novos desafios para evolução contínua de nós mesmos. 
+                        Além dos estudos e do foco em desenvolvimento Full Stack, busco sempre equilibrar minha rotina com atividades que despertam 
+                        minha criatividade e curiosidade. Entre meus hobbies estão a leitura, artesanato, fotografia, séries e o universo da cultura 
+                        pop, interesses que muitas vezes inspiram minhas ideias e minha forma de enxergar o mundo da tecnologia.</p>
+                </div>
+                <div class="coluna-paragrafo">
+                    <p> Na prática, construo aplicações web combinando <i>HTML, CSS, JavaScript e PHP</i> com bancos de dados <i>MySQL</i>, além de desenhar as interfaces 
+                        direto no <i>Figma</i>. Para dar o próximo passo no Full Stack, hoje meu foco está em dominar <i>Node.js, React e a criação de APIs</i>. Também 
+                        dedico meu tempo a linguagens como <i>Python, Java e C</i>, porque acredito que entender diferentes lógicas de programação irá ampliar a 
+                        minha bagagem na área.</p><br>
+                    <p> Busco conquistar minha primeira oportunidade na área de tecnologia, participar de equipes que valorize o aprendizado e onde eu possa 
+                        colaborar em projetos reais e continuar evoluindo a cada desafio. Quero continuar desenvolvendo soluções que envolvam a organização, 
+                        funcionalidade e propósito, criando aplicações que facilitem o dia a dia das pessoas e gerem impacto positivo por meio da tecnologia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacao" class="secao-formacao"> <!-- Seção formação -->
+    <div class="container">
+        <h2>Formação Acadêmica</h2>
+        
+        <div class="formacao-linha1">
+            <div class="bloco-cursos">
+                <h3>Cursos</h3>
+                <ul class="lista-formacao">
+                    <li><strong>AI Reports com Excel, GPT Agents e Claude Code </strong> DIO & Santander OpenAcademy — <i>2026 (cursando)</i></li>
+                    <li><strong>Fundamentos do Python:</strong> Cisco Networkimg Academy & UNINTER — <i>2026 (cursando)</i></li>
+                    <li><strong>AWS:</strong> Treina Brasil — <i>2026</i></li>
+                    <li><strong>Lei Geral de Proteção de Dados (LGPD):</strong> Fundação Bradesco — <i>2024</i></li>
+                </ul>
+            </div>
+            
+            <div class="bloco-idiomas">
+                <h3>Idiomas</h3>
+                <ul class="lista-formacao">
+                    <li><strong>Inglês:</strong> Nível Intermediário</li>
+                    <li><strong>Espanhol:</strong> Nível Básico</li>
+                    <li><strong>Italiano:</strong> Nível Básico</li>
+                    <li><strong>Coreano:</strong> Nível Básico</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="formacao-linha2">
+        <div class="bloco-formacao">
+                <h3>Formação Educacional</h3>
+                <p><strong>Bacharelado em Engenharia de Software</strong><br>Centro Universitário Internacional (UNINTER): <i>2025 - Atualmente</i></p>
+                <p><strong>Técnico em Desenvolvimentos de Sistemas</strong><br>Escola Técnica Estadual (ETEC): <i>2022 - 2024</i></p>
+        </div>    
+            <div class="bloco-imagem">
+                <img src="img/computador.png" alt="Ilustração de um computador de mesa" class="image">
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="secao-portfolio"> <!-- Seção de Projetos -->
+    <div class="container">
+        <h2>Meus Projetos</h2>
+        <div class="linha-portfolio">
+            
+            <!-- Links que levam para os repositórios dos trabalhos -->
+            <a href="https://github.com/eduardainacio" target="_blank" class="card-projeto">
+                <div class="card-imagem">
+                    <img src="img/readme_github.PNG" alt="Meu README do GitHub">
+                </div>
+                <div class="card-info">
+                    <h3>Meu READ ME do GitHub</h3>
+                    <span class="botao-card">Veja o Projeto</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/eduardainacio/primeiro-projeto-python" target="_blank" class="card-projeto">
+                <div class="card-imagem">
+                    <img src="img/projeto_python.PNG" alt="Primeiros Scripts em Python">
+                </div>
+                <div class="card-info">
+                    <h3>Primeiros Scripts Python</h3>
+                    <span class="botao-card">Veja o Repositório</span>
+                </div>
+            </a>
+
+            <a href="https://eduardainacio.github.io/calculadora-js/" target="_blank" class="card-projeto">
+                <div class="card-imagem">
+                    <img src="img/projeto_calculadora_js.PNG" alt="Projeto Calculadora">
+                </div>
+                <div class="card-info">
+                    <h3>Calculadora em JavaScript</h3>
+                    <span class="botao-card">Veja o Projeto</span>
+                </div>
+            </a>
+
+            <a href="https://eduardainacio.github.io/projeto_TCC2024/" target="_blank" class="card-projeto">
+                <div class="card-imagem">
+                    <img src="img/projeto_tcc_tecnico.PNG" alt="Projeto TCC Técnico DS">
+                </div>
+                <div class="card-info">
+                    <h3>Site Projeto TCC 2024</h3>
+                    <span class="botao-card">Veja o Projeto</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+    <section id="contato" class="secao-contato"> <!-- Seção contato -->
+        <div class="container">
+            <h2>Contato</h2>
+            <!-- Formulário de contato -->
+            <form id="formulario-contato">
+                <div class="formulario">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="formulario">
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="text" id="email" name="email" placeholder="usuario@dominio.com">
+                </div>
+                <div class="formulario">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Como posso ajudar você?"></textarea>
+                </div>
+                <button type="submit" id="btn-enviar">Enviar Mensagem</button> <!-- Botão para enviar os dados inseridos -->
+            </form>
+
+        </div>
+    </section>
+    <!-- Mensagem escondida para a confirmação ou avisos sobre o envio do formulário -->
+    <div id="modal-alerta" class="modal-escondido">
+        <div class="modal-conteudo" id="modal-corpo">
+            <p id="modal-mensagem"></p>
+            <button id="modal-btn-ok">OK</button>
+        </div>
+    </div>
+
+    <footer class="rodape"> <!-- Rodapé do portfolio -->
+        <div class="container flex-rodape">
+            <div class="info-contato-rodape">
+                <p><strong>E-mail:</strong> eduarda.sinacio@gmail.com</p>
+                <p>RU: 5540849</p>
+            </div>
+            <div>
+                <div class="redes-sociais">
+                    <!-- Links para as minhas redes de contato -->
+                    <a href="https://www.linkedin.com/in/eduarda-inacio/" target="_blank" class="btn-rede"><img src="img/linkedin.png" alt="Meu Linkedin"></a>
+                    <a href="https://github.com/eduardainacio" target="_blank" class="btn-rede"><img src="img/github.png" alt="Meu GitHub"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"> </script> <!-- importação do código em JavaScript -->
+
+
+</body>
+</html>
