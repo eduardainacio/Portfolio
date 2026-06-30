@@ -573,7 +573,7 @@ h2 {
     }
     
     .menu-toggle {
-        display: block; 
+        display: flex; 
     }
 
     /* Alinha o Logo e o Botão nas extremidades da tela */
